@@ -1,6 +1,7 @@
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Anton', sans-serif;
   background: #111;
   color: #fff;
 }
@@ -9,11 +10,18 @@ body {
 .banner-img {
   width: 100%;
   height: auto;
+  max-height: 500px;
+  object-fit: cover;
   display: block;
-  margin-bottom: 10px;
 }
 
-/* Nav Menu */
+@media (max-width: 768px) {
+  .banner-img {
+    max-height: 300px;
+  }
+}
+
+/* Navigation */
 .main-nav {
   background-color: #000;
   padding: 10px 0;
@@ -40,9 +48,24 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .main-nav a:hover {
   color: #f04;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.btn {
+  background: #f04;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
