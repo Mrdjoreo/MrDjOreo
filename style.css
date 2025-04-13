@@ -32,10 +32,3 @@ nav a {
   text-decoration: none;
   border-radius: 5px;
 }
-.Banner-img {
-  width: 100%;
-  Max-height: 400px;
-  objective-fit: cover;
-  display: block;
-  margin-bottom: 20px;
-}
