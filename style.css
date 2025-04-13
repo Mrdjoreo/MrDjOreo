@@ -103,3 +103,23 @@ body {
   font-weight: bold;
   margin-top: 10px;
 }
+
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.cart-form {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+.cart-summary {
+  flex: 0 0 300px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
