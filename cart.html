@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart - MrDJ Oreo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <script src="cart.js" defer></script>
+</head>
+<body>
+  <section class="banner">
+    <img src="website front.png" alt="Mr DJ Oreo Banner" class="banner-img" />
+  </section>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="book.html">Book Me</a></li>
+      <li><a href="rent.html">Rent Gear</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="music.html">Mixes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">🛒 Cart</a></li>
+    </ul>
+  </nav>
+
+  <section class="cart-content">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div id="total-price"></div>
+    <form id="reservation-form">
+      <h3>Reservation Info</h3>
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="details" placeholder="Event date, location, notes..." required></textarea><br>
+      <button type="submit" class="btn">Submit Reservation</button>
+    </form>
+    <div id="payment-link" style="display:none; margin-top: 20px;">
+      <h4>Confirm your reservation:</h4>
+      <a href="https://pay.sumup.com/b2c/QGYZVYQ0" target="_blank" class="btn">Pay Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mr. DJ Oreo</p>
+  </footer>
+</body>
+</html>
