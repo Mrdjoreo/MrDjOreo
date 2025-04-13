@@ -21,7 +21,8 @@ nav a {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: #222;
+  background: url (PHOTO-2023-11-07-15-12-43.jpg) no-repeat center center/cover;
+  color: white;
 }
 
 .btn {
