@@ -1,15 +1,26 @@
-/* Banner styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+/* Banner */
 .banner-img {
   width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 10px;
 }
 
-/* Horizontal nav menu */
+/* Nav Menu */
 .main-nav {
   background-color: #000;
   padding: 10px 0;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .main-nav ul {
@@ -21,17 +32,17 @@
   flex-wrap: wrap;
 }
 
-.main-nav ul li {
+.main-nav li {
   margin: 0 15px;
 }
 
-.main-nav ul li a {
+.main-nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
 }
 
-.main-nav ul li a:hover {
+.main-nav a:hover {
   color: #f04;
 }
