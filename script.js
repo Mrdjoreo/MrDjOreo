@@ -1,9 +1,11 @@
 
-let cart = [];
-
-function addToCart(id, name, price) {
-  const item = { id, name, price };
-  cart.push(item);
-  alert(`${name} added to cart!`);
-  localStorage.setItem('cart', JSON.stringify(cart));
+function filterGear(category) {
+  const groups = document.querySelectorAll('.gear-group');
+  groups.forEach(group => {
+    if (category === 'all' || group.id === category) {
+      group.style.display = 'block';
+    } else {
+      group.style.display = 'none';
+    }
+  });
 }
