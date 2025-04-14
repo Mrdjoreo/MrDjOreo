@@ -25,18 +25,75 @@
     </nav>
   </header>
 
+  
   <section class="slideshow">
-  <img class="website front.png" src="rent-banner.jpg" alt="book-banner.jpg">
-  <img class="rent-banner.jpg" src="website front.png" alt="book-banner.jpg">
-  <img class="book-banner.jpg" src="rent-banner.jpg" alt="website front.png">
-  <img class="book-banner.jpg" src="website front.png" alt="rent-banner.jpg">
-</section>
+    <img class="slide active" src="book-banner.jpg" alt="Book Me Banner">
+    <img class="slide" src="events-banner.jpg" alt="Events Banner">
+    <img class="slide" src="rent-banner.jpg" alt="Rent Gear Banner">
+    <img class="slide" src="website front.png" alt="Main Front Banner">
+  </section>
 
 
-  <section class="upload-section">
-    <h2>Upload Music, Videos or Clips</h2>
-    <input type="file" id="mediaUpload" multiple accept="audio/*,video/*">
-    <div id="mediaPreview"></div>
+
+  
+  <section class="album-slideshow">
+    <h2>🎧 Featured Album Covers</h2>
+    <div class="album-carousel">
+      <a href="https://example.com/album1" target="_blank" class="album-slide-link">
+        <img class="album-slide active" src="album1.jpg" alt="Album 1">
+        <div class="album-caption">Rise Up<br><span>Released: 2024</span></div>
+      </a>
+      <a href="https://example.com/album2" target="_blank" class="album-slide-link">
+        <img class="album-slide" src="album2.jpg" alt="Album 2">
+        <div class="album-caption">Night Shift<br><span>Released: 2023</span></div>
+      </a>
+      <a href="https://example.com/album3" target="_blank" class="album-slide-link">
+        <img class="album-slide" src="album3.jpg" alt="Album 3">
+        <div class="album-caption">Bassline Fever<br><span>Released: 2022</span></div>
+      </a>
+    </div>
+  </section>
+
+    <h2>🎧 Featured Album Covers</h2>
+    <div class="album-carousel">
+      <img class="album-slide active" src="album1.jpg" alt="Album 1">
+      <img class="album-slide" src="album2.jpg" alt="Album 2">
+      <img class="album-slide" src="album3.jpg" alt="Album 3">
+    </div>
+  </section>
+
+  <section class="media-showcase">
+    <h2>🎵 Latest Music</h2>
+    <div class="media-row">
+      <div class="media-item">
+        <p>Summer Vibes</p>
+        <audio controls>
+          <source src="music1.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="media-item">
+        <p>Midnight Groove</p>
+        <audio controls>
+          <source src="music2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <h2>🎬 Music Videos & Clips</h2>
+    <div class="media-row">
+      <div class="media-item">
+        <p>Club Night Recap</p>
+        <video controls width="320">
+          <source src="video1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="media-item">
+        <p>Live Set Snippet</p>
+        <video controls width="320">
+          <source src="video2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
   </section>
 
   <footer>

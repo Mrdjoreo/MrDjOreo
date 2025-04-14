@@ -42,3 +42,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+let currentAlbum = 0;
+const albumSlides = document.querySelectorAll('.album-slide');
+
+function showAlbum(index) {
+  albumSlides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) slide.classList.add('active');
+  });
+}
+
+setInterval(() => {
+  currentAlbum = (currentAlbum + 1) % albumSlides.length;
+  showAlbum(currentAlbum);
+}, 3500);
+
+let currentAlbum = 0;
+const albumLinks = document.querySelectorAll('.album-slide-link');
+
+function showAlbum(index) {
+  albumLinks.forEach((link, i) => {
+    link.classList.remove('active');
+    if (i === index) link.classList.add('active');
+  });
+}
+
+setInterval(() => {
+  currentAlbum = (currentAlbum + 1) % albumLinks.length;
+  showAlbum(currentAlbum);
+}, 3500);
