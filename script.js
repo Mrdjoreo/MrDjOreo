@@ -26,13 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const reader = new FileReader();
       reader.onload = () => {
         let element;
-        if (file.type.startsWith('image')) {
-          element = document.createElement('img');
+        if (file.type.startsWith('audio')) {
+          element = document.createElement('audio');
+          element.controls = true;
           element.src = reader.result;
         } else if (file.type.startsWith('video')) {
           element = document.createElement('video');
-          element.src = reader.result;
           element.controls = true;
+          element.src = reader.result;
+          element.width = 320;
         }
         mediaPreview.appendChild(element);
       };
