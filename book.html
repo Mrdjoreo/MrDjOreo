@@ -1,8 +1,61 @@
-<!DOCTYPE html><html><head><title>book.html</title><link rel='stylesheet' href='style.css'><script src='script.js' defer></script></head><body>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Me - MrDJ Oreo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+</head>
+<body>
   <section class="slideshow">
-    <img class="slide" src="slide1.jpg" alt="Slide 1">
-    <img class="slide" src="slide2.jpg" alt="Slide 2">
-    <img class="slide" src="slide3.jpg" alt="Slide 3">
+    <img class="slide active" src="book-banner.jpg" alt="Book Me Banner" />
+    <img class="slide" src="slide2.jpg" alt="Slide 2" />
   </section>
-<h2>Book</h2></body></html>
+
+  <section class="booking-form">
+    <h2>📆 Book MrDJ Oreo</h2>
+    <form action="https://formspree.io/f/mpwpbbao" method="POST">
+      <input type="hidden" name="_redirect" value="thank-you.html" />
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="phone" placeholder="Phone Number" />
+      <select name="event-type" required>
+        <option value="">Select Event Type</option>
+        <option>Birthday Party</option>
+        <option>Wedding</option>
+        <option>Club Night</option>
+        <option>Corporate Event</option>
+        <option>Other</option>
+      </select>
+      <input type="date" name="event-date" required />
+      <input type="time" name="event-time" />
+      <input type="text" name="location" placeholder="Event Location" required />
+      <textarea name="message" placeholder="Additional Details..." rows="4"></textarea>
+      <button type="submit" class="btn">Send Booking Request</button>
+    </form>
+  </section>
+
+  <section class="event-gallery">
+    <h2>🎥 Previous Events</h2>
+    <div class="media-row">
+      <div class="media-item">
+        <img src="event1.jpg" alt="Event 1" />
+      </div>
+      <div class="media-item">
+        <img src="event2.jpg" alt="Event 2" />
+      </div>
+      <div class="media-item">
+        <video controls width="320">
+          <source src="event-clip1.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MrDJ Oreo</p>
+  </footer>
+</body>
+</html>
